@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Сгенерировать цитату Джейсона Стетхема</title>
+    <link rel="stylesheet" href="css/index_style.css">
+</head>
+<body>
+    <div class="statham-background left"></div>
+    <div class="statham-background right"></div>
+    <div class="container">
+        <header>
+            <h1>Сгенерировать цитату</h1>
+            <nav>
+                <a href="index.php">Главная</a>
+                <a href="add_quote.html">Добавить цитату</a>
+                <a href="generate_quote.html">Сгенерировать цитату</a>
+            </nav>
+        </header>
+        <main>
+            <!-- Контейнер для генерации цитаты -->
+            <div class="generate-quote-container">
+                <!--Форма для генерации случайной цитаты - action указывает на скрипт обработки (generate_quote.php) - method="get" отправляет данные методом GET -->
+                <form action="generate_quote.php" method="get">
+                    <!-- Кнопка для запуска генерации цитаты -->
+                    <button type="submit">Сгенерировать случайную цитату</button>
+                </form> 
+                <!-- Контейнер для отображения сгенерированной цитаты - Пустой div, который будет заполнен динамически через JavaScript или серверный скрипт -->
+                <div id="generated-quote"></div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

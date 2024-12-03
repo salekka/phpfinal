@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить цитату</title>
+    <link rel="stylesheet" href="css/add_quote_style.css">
+</head>
+<body>
+    <div class="statham-background left"></div>
+    <div class="statham-background right"></div>
+    
+    <div class="container">
+        <header>
+            <h1>Добавить цитату Джейсона Стетхема</h1>
+            <nav>
+                <!-- Ссылки на различные страницы сайта -->
+                <a href="index.php">Главная</a>
+                <a href="add_quote.html">Добавить цитату</a>
+                <a href="generate_quote.html">Сгенерировать цитату</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Форма для добавления новой цитаты - action указывает на скрипт обработки формы (add_quote.php) - method="post" отправляет данные методом POST -->
+            <form action="add_quote.php" method="post">
+                <!-- Текстовое поле для ввода цитаты- name="quote" - имя поля для передачи в PHP - placeholder - подсказка в поле ввода- required - обязательное поле для заполнения -->
+                <textarea name="quote" placeholder="Введите вашу цитату" required></textarea>
+                <button type="submit">Добавить цитату</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
